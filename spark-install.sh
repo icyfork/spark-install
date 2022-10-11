@@ -117,11 +117,12 @@ then
         brew install Caskroom/cask/java
     elif [[ $(uname -s) = "Linux" ]]
     then
-        echo "Downloading JDK..."
-        sudo add-apt-repository ppa:webupd8team/java
-        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
-        sudo apt-get update
-        sudo apt-get install oracle-java8-installer
+        #echo "Downloading JDK..."
+        #sudo add-apt-repository ppa:webupd8team/java
+        #sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+        #sudo apt-get update
+        #sudo apt-get install oracle-java8-installer
+        sudo  apt-get install openjdk-8-jdk-headless
     fi
 fi
 
